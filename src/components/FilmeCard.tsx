@@ -6,7 +6,7 @@ type FilmeProps = {
   titulo: string;
   genero: string;
   ano: number;
-  imagem: string;
+  imagem: any; // Tipo alterado para 'any' para aceitar o require() da imagem local
 };
 
 export default function FilmeCard({ titulo, genero, ano, imagem }: FilmeProps) {
@@ -26,7 +26,7 @@ export default function FilmeCard({ titulo, genero, ano, imagem }: FilmeProps) {
       style={({ pressed }) => [styles.card, pressed && styles.cardPressionado]}
       onPress={navegarParaDetalhes}
     >
-      <Image source={{ uri: imagem }} style={styles.imagem} />
+      <Image source={imagem} style={styles.imagem} />
       <View style={styles.info}>
         <Text style={styles.titulo}>{titulo}</Text>
         <Text style={styles.detalhe}>{genero} • {ano}</Text>

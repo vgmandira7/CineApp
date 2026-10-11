@@ -1,5 +1,5 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Botao from '../components/Botao';
 
 export default function Detalhes() {
@@ -8,7 +8,7 @@ export default function Detalhes() {
 
   return (
     <View style={styles.container}>
-      <Image source={{ uri: imagem as string }} style={styles.imagem} />
+      <Image source={Number(imagem)} style={styles.imagem} />
       <Text style={styles.titulo}>{titulo}</Text>
       <View style={styles.infoBox}>
         <Text style={styles.texto}>Gênero: {genero}</Text>
