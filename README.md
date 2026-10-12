@@ -1,7 +1,7 @@
 # CineApp
 
 **Aluno:** Vitor Gabriel Mandira Soares
-**RA:** [PREENCHA SEU RA AQUI]
+**RA:** 2991392513028
 **Disciplina:** Programação para Dispositivos Móveis I
 **Nome do aplicativo:** CineApp
 
